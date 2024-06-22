@@ -12,7 +12,6 @@ export default function cakeReducer(state = initialState, action){
                 numberOfCake: state.numberOfCake - action.payload
             }
         } 
-
         default: return state;
     }
 }
