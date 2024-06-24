@@ -5,8 +5,8 @@ import buyCake from "../redux/cake/cakeActions";
 const CakeContainer = () => {
     const [counter, setCounter] = useState(0);
     const dispatch = useDispatch();
-    const state = useSelector((state)=>state);
-    console.log(state);
+    const state = useSelector((state)=>state.cake);
+    console.log('cakeeeeee',state);
   return (
     <>
     <h1>Buy cake here</h1>

@@ -5,7 +5,7 @@ import buyIcecream from "../redux/icecream/icecreamActions";
 const IcecreamContainer = () => {
     const [counter, setCounter] = useState(0);
     const dispatch = useDispatch();
-    const state = useSelector((state)=>state);
+    const state = useSelector((state)=>state.icecream);
     console.log("iceeeeeeeeeeeeecream",state);
   return (
     <>
