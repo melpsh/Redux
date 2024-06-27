@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import userFetch from "../redux/users/userActions";
+import { getAsyncUser } from "../features/users/userSlice";
 
 const UserList = () => {
 
@@ -8,7 +8,7 @@ const UserList = () => {
   const state = useSelector((state)=>state.user);
 
   useEffect(()=>{
-    dispatch(userFetch());
+    dispatch(getAsyncUser());
   },[dispatch])
 
   return (
